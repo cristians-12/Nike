@@ -1,0 +1,121 @@
+body{
+    margin: 30px 0 0 0;
+    font-family: 'Work Sans', sans-serif;
+}
+.row{
+    margin: 0;
+}
+
+.contenedor .back{
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 160px;
+    line-height: 240px;
+    position: absolute;
+    transform: rotate(90.13deg);
+    width: 492.7px;
+    height: 174px;
+    top: 35%;
+    color: rgba(0, 0, 0, 0.1);
+    z-index: -1;
+}
+nav .back-btn{
+    border: 1px solid rgba(55, 73, 87, 0.2);
+    border-radius: 8px;
+    padding: 4px 10px;
+    width: 44px;
+}
+nav .back-btn .fa-arrow-right{
+    transform: scaleX(-1);
+}
+nav .toolbar{
+    padding: 0  22px;
+}
+nav .toolbar .shop-bag{
+    width: 22px;
+    margin-bottom: 6px;
+}
+nav .toolbar .buy-btn{
+    border: 1px solid rgba(55, 73, 87, 0.2);
+    border-radius: 8px;
+    padding: 4px 10px;
+    width: 44px;
+    position: relative;
+}
+
+.contenedor .section{
+    margin-top: 22%;
+    margin-bottom: 38%;
+}
+.contenedor .section .btn-size{
+    border: 1px solid rgba(55, 73, 87, 0.2);
+    border-radius: 13px;
+    padding: 6px 18px;
+}
+.contenedor .section .Product{
+    position: absolute;
+    right: 5%;
+    top: 14%;
+    z-index: 3;
+    animation-name: movimiento;
+    animation-duration: 3s;
+}
+.contenedor .section .bookmark{
+    border: 1px solid #000000;
+    border-radius: 12px;
+    padding: 4px 10px;
+    width: 34px;
+    position: absolute;
+    top: 24%;
+
+}
+.contenedor .section-1{
+    margin-top: 20%;
+}
+.contenedor .section-1 h1{
+    margin: 0;
+}
+
+
+.caja{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+}
+.caja .cajaimg{
+    width: 82%;
+}
+.caja .buy-slide{
+    background-color: #000000;
+    width: 11%;
+    position: absolute;
+    left: 45%;
+    padding: 8px 10px;
+    border-radius: 16px;
+    z-index: 4;
+    animation-name: brr;
+    animation-duration: 0.6s;
+    animation-iteration-count: infinite;
+    /* animation-delay: -2s; */
+}
+.caja .buy-slide img{
+    filter: invert(1);
+}
+
+@keyframes movimiento{
+    from{transform:translateY(70%)}
+    to{transform: translateY(0%);}
+    from{opacity: 0.9;}
+    to{opacity: 1;}
+}
+
+@keyframes brr{
+    0%{transform: translateY(0%);}
+    25%{transform: translateY(3%);}
+    50%{transform: translateY(0%);}
+    75%{transform: translateY(-3%);}
+    100%{transform: translateY(0%);}
+}
