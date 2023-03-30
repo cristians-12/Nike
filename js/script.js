@@ -7,13 +7,14 @@ document.querySelector(".section .Product").classList.add("animado");
 
 colores.forEach((cadacolor,i )=> {
     colores[i].addEventListener('click',()=>{
+        document.querySelector(".section .Product").classList.remove('animado');
         colores.forEach((element,i)=>{
             colores[i].classList.remove("activo");
         })
         colores[i].classList.add("activo");
         imagen.setAttribute('src',imagenes[i]);
-        document.querySelector(".section .Product").classList.remove("animado");
-        imagen.classList.add("animado");
+        // document.querySelector(".section .Product").classList.remove("animado");
+        document.querySelector(".section .Product").classList.add('animado');
     });
 });
 
