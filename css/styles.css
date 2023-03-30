@@ -7,6 +7,7 @@ body{
 }
 img{
     object-fit: cover;
+    width: 100%;
 }
 
 .contenedor .back{
@@ -49,7 +50,7 @@ nav .toolbar .buy-btn{
 
 .contenedor .section{
     margin-top: 22%;
-    margin-bottom: 38%;
+    margin-bottom: 20%;
 }
 .contenedor .section .btn-size{
     border: 1px solid rgba(55, 73, 87, 0.2);
@@ -74,7 +75,7 @@ nav .toolbar .buy-btn{
 
 }
 .contenedor .section-1{
-    margin-top: 20%;
+    margin-top: 5%;
 }
 .contenedor .section-1 h1{
     margin: 0;

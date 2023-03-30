@@ -11,5 +11,6 @@ colores.forEach((cadacolor,i )=> {
         })
         colores[i].classList.add("activo");
         imagen.setAttribute('src',imagenes[i]);
+        imagen.classList.add("animado");
     });
 });
