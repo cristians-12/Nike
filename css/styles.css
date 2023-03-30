@@ -69,7 +69,7 @@ nav .toolbar .buy-btn{
     border-radius: 12px;
     padding: 4px 10px;
     width: 34px;
-    position: absolute;
+    /* position: absolute; */
     top: 24%;
 
 }
@@ -79,10 +79,36 @@ nav .toolbar .buy-btn{
 .contenedor .section-1 h1{
     margin: 0;
 }
-.contenedor .section-2{
-    /* margin-bottom: 25%; */
+.section .colores{
+    z-index: 5;
 }
-
+.color{
+    border: 1px solid black;
+    border-radius: 11px;
+    padding: 7px 7px;
+    width: 35px;
+}
+.activo{
+    background-color: rgb(218, 218, 218);
+}
+.section .color .rojo{
+    background: rgb(168, 35, 35);
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+}
+.section .color .amarillo{
+    background: rgb(190, 188, 46);
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+}
+.section .color .morado{
+    background: rgb(85, 16, 99);
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+}
 
 .caja{
     /* position: absolute; */
@@ -109,6 +135,11 @@ nav .toolbar .buy-btn{
 }
 .caja .buy-slide img{
     filter: invert(1);
+}
+
+.animado{
+    animation-name: movimiento;
+    animation-duration: 3s;
 }
 
 @keyframes movimiento{
