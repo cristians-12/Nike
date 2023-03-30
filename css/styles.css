@@ -76,10 +76,13 @@ nav .toolbar .buy-btn{
 .contenedor .section-1 h1{
     margin: 0;
 }
+.contenedor .section-2{
+    /* margin-bottom: 25%; */
+}
 
 
 .caja{
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
     width: 100%;
     text-align: center;
