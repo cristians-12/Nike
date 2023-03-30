@@ -3,6 +3,7 @@ const imagenes = ["img/Red Shoe.png","img/Yellow Shoe.png","img/morado.png"];
 const imagen = document.getElementById("Producto");
 
 colores[0].classList.add("activo");
+document.querySelector(".section .Product").classList.add("animado");
 
 colores.forEach((cadacolor,i )=> {
     colores[i].addEventListener('click',()=>{
@@ -11,6 +12,11 @@ colores.forEach((cadacolor,i )=> {
         })
         colores[i].classList.add("activo");
         imagen.setAttribute('src',imagenes[i]);
+        document.querySelector(".section .Product").classList.remove("animado");
         imagen.classList.add("animado");
     });
 });
+
+setInterval(function() {
+    document.querySelector(".section .Product").classList.remove('animado');
+  }, 4000);

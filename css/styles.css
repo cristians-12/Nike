@@ -62,8 +62,8 @@ nav .toolbar .buy-btn{
     right: 5%;
     top: 14%;
     z-index: 3;
-    animation-name: movimiento;
-    animation-duration: 3s;
+    /* animation-name: movimiento;
+    animation-duration: 3s; */
 }
 .contenedor .section .bookmark{
     border: 1px solid #000000;
@@ -139,11 +139,17 @@ nav .toolbar .buy-btn{
 }
 
 .animado{
-    animation-name: movimiento;
+    animation-name: movimiento1;
     animation-duration: 3s;
 }
 
 @keyframes movimiento{
+    from{transform:translateY(104%)}
+    to{transform: translateY(0%);}
+    from{opacity: 0.9;}
+    to{opacity: 1;}
+}
+@keyframes movimiento1{
     from{transform:translateY(104%)}
     to{transform: translateY(0%);}
     from{opacity: 0.9;}
